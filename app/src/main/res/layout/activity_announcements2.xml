@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.ActivityAnnouncements">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?colorPrimary"
+        app:titleTextColor="@color/white"
+        app:title="@string/app_name"
+        android:id="@+id/admin_toolbar">
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/announcementsRecView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/admin_toolbar"
+        android:layout_height="match_parent"
+        android:padding="2dp" />
+
+</RelativeLayout>

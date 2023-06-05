@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimaryVariant"
+    tools:context=".Student.StudentMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:id="@+id/std_toolbar"
+        app:menu="@menu/student_menu">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/std_toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/progress"
+                android:layout_marginVertical="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:padding="10dp"
+                    android:src="@drawable/progression"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Progression"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arvo"
+                        android:background="#FFD919"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/register"
+                app:cardCornerRadius="20dp"
+                android:layout_marginVertical="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:padding="10dp"
+                        android:src="@drawable/register"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Register"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arvo"
+                        android:background="#FFD919"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/add_drop"
+                android:layout_marginVertical="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:padding="10dp"
+                        android:src="@drawable/add_drop"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add/Drop"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arvo"
+                        android:background="#FFD919"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

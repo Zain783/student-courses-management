@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "932092272863",
+    "project_id": "segi-cr-470be",
+    "storage_bucket": "segi-cr-470be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932092272863:android:79df6a99c389a7d8c0096a",
+        "android_client_info": {
+          "package_name": "com.project.segicr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932092272863-lsc5j19h77rdoqj7a49gj752tqv52mfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.segicr",
+            "certificate_hash": "3785fdb903976d9b02dc65b5ed181a230939ce82"
+          }
+        },
+        {
+          "client_id": "932092272863-o9drl9n06fd8n2gdruntdo2sgqaefigl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf2ArXK0bbVejJz7KO2rbYSg_axqMXKKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932092272863-o9drl9n06fd8n2gdruntdo2sgqaefigl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

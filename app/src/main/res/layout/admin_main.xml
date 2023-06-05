@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminMainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/admin_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_exit_to_app_24"
+            android:padding="5dp"
+            android:id="@+id/btnLogout"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:padding="5dp"
+            android:id="@+id/btnDeleteAllReq"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:orientation="horizontal"
+        android:layout_below="@+id/admin_toolbar"
+        android:gravity="center"
+        android:id="@+id/llMajor"
+        android:layout_marginHorizontal="10dp"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Major"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:fontFamily="@font/arvo"/>
+        <Spinner
+            android:id="@+id/major"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestsRecView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llMajor"
+        android:padding="2dp" />
+</RelativeLayout>
